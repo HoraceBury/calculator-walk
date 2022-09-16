@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Calculator.Controllers;
@@ -14,6 +15,7 @@ public class CalculatorController : ControllerBase
     }
 
     // GET calculator/add/4/2/
+    [Authorize]
     [HttpGet("add/{x}/{y}")]
     public int Add(int x, int y)
     {
