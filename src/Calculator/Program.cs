@@ -12,6 +12,7 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.UseMiddleware<LogMiddleware>();
 app.MapControllers();
 
 app.MapGet("/", () => "Welcome to running ASP.NET Core Minimal API on AWS Lambda");
