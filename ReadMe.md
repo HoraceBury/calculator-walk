@@ -204,3 +204,36 @@ Add header: `Authorization:Bearer <token>` replacing `<token>` with the copied v
 
 Repeat the GET request in Postman
 See resonse body contains "3"
+
+# Additional dotnet CLI
+
+List installed dotnet templates:
+`dotnet new --list`
+
+List installed dotnet templates filtered by tag 'aws':
+`dotnet new --list --tag aws`
+
+Install template library from nuget:
+`dotnet new -i Amazon.Lambda.Templates`
+
+Install dotnet lambda tools:
+`dotnet tool install -g Amazon.Lambda.Tools`
+
+Create project from template:
+`dotnet new console -n MyConsoleProject`
+
+Create minimal dotnet lambda project from template:
+`dotnet new serverless.AspNetCoreMinimalAPI -n LambdaProject`
+
+Publish deployable binary (ref):
+`dotnet publish -c Release --output=publish`
+
+Clean publish folder, build publish and zip:
+```
+Remove-Item .\publish\ -Recurse -Force
+dotnet publish -c Debug --output=publish
+Compress-Archive .\publish\* publish.zip -Force
+```
+
+Publish from command line:
+`dotnet lambda deploy-function CleanCalculator -frun dotnet6`
