@@ -1,4 +1,4 @@
-Go to> c:\github\CompleteAWS
+## ***This guide is currently incomplete.***
 
 # About this guide
 
