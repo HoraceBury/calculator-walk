@@ -298,7 +298,8 @@ You can create the Lambda yourself (see instructions at the top of the guide) or
 
 # References
 
-* AWS CLI setup https://medium.com/@vishal.sharma./create-an-aws-s3-bucket-using-aws-cli-5a19bc1fda79
-* https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/create-table.html
-* https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html
-* https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html
+* [AWS CLI setup](https://medium.com/@vishal.sharma./create-an-aws-s3-bucket-using-aws-cli-5a19bc1fda79)
+* [aws dynamodb create-table](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/create-table.html)
+* [aws s3api create-bucket](https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html)
+* [aws s3api put-public-access-block](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html)
+* [Terraform docs aws_iam_role_policy_attachment](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment)
